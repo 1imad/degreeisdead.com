@@ -1,0 +1,126 @@
+:root {
+  --txt-primary: #535353;
+  --txt-hover: #292929;
+  --background: #F7F7F7;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  min-height: 100vh;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  font-family: 'Press Start 2P', cursive;
+  color: var(--txt-primary);
+  background-color: var(--background);
+  margin: 0;
+  overflow: hidden;
+}
+
+.cs-logo{
+  position: absolute;
+  right: 120px;
+  top: 25px;
+}
+
+.game {
+  position: relative;
+  width: 80%;
+  height: 200px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 10rem;
+}
+
+.score {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: .8rem;
+}
+
+.start-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: .8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.gameover-message {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: .8rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  line-height: 2.5rem;
+}
+
+.gameover-message p {
+  letter-spacing: .5em;
+}
+
+.gameover-message span {
+  font-size: .6rem;
+  text-transform: none;
+}
+
+.ground {
+  --left: 0;
+  width: 300%;
+  position: absolute;
+  bottom: 0;
+  left: calc(var(--left) * 1%);
+}
+
+.dino {
+  --bottom: 0;
+  height: 30%;
+  position: absolute;
+  left: 1%;
+  bottom: calc(var(--bottom) * 1%);
+}
+
+.cactus {
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  left: calc(var(--left) * 1%);
+}
+
+.hide {
+  display: none;
+}
+
+
+.applyNow{
+  /* position: absolute; */
+  bottom: 50px;
+  width: 80%;
+  margin: auto;
+  line-height: 1.5rem;
+}
+
+.applyNow h2{
+  margin-top: 50px;
+}
+
+.applyNow p{
+  font-size: .8rem;
+}
+
+li{
+  font-size: .8rem;
+  line-height: 2rem;
+}

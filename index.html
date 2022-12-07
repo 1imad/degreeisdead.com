@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Chrome Dino Game</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <img id="cs-logo" class="cs-logo hide" src="https://res.cloudinary.com/dhznnpvlm/image/upload/c_scale,w_250/v1613830252/cs-code-in/Wof2mhd_yjup9q.png" alt="cs.code.in">
+      <div id="game" class="game">
+         <div id="score" class="score">0</div>
+         <div id="start-message" class="start-message"></div>
+         <img src="assets/ground.png" class="ground">
+         <img src="assets/ground.png" class="ground">
+         <img src="assets/dino-stationary.png" id="dino" class="dino">
+         <div id="gameover-message" class="gameover-message hide">
+            <p>Game over</p>
+         </div> 
+      </div>
+      <div class="applyNow hide" id="apply-now">
+         <h2>Unable to connect to the industry.</h2>
+         <p>Google Chrome can't display jobs because your degree isn't connected to your skills.</p>
+         <h3>Try:</h3>
+         <ul>
+            <li>Reconnecting with industry and acquiring in-demand skills.</li>
+            <li><a href="https://apply.cs.code.in">Fill an application on cs.code.in</a></li>
+         </ul>
+      </div>
+      <script src="/script.js"></script>
+   </body>
+</html>

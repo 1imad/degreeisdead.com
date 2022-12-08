@@ -23,15 +23,15 @@ body {
   overflow: hidden;
 }
 
-.cs-logo{
+.cs-logo {
   position: absolute;
-  right: 120px;
+  right: 18%;
   top: 25px;
 }
 
 .game {
   position: relative;
-  width: 80%;
+  width: 60%;
   height: 200px;
   overflow: hidden;
   margin: auto;
@@ -104,13 +104,13 @@ body {
 }
 
 
-.applyNow{
+.applyNow {
   bottom: 50px;
-  width: 80%;
+  width: 60%;
   margin: auto;
 }
 
-.applyNow h2{
+.applyNow h2 {
   margin-top: 50px;
   font-size: 1.5rem;
 }
@@ -118,5 +118,12 @@ body {
 @media only screen and (max-width: 600px) {
   body {
     overflow: auto;
+  }
+
+  .game {
+    width: 80%;
+  }
+  .applyNow {
+    width: 80%;
   }
 }

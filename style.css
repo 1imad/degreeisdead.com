@@ -16,7 +16,7 @@ body {
   /* display: flex; */
   /* justify-content: center; */
   /* align-items: center; */
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
   color: var(--txt-primary);
   background-color: var(--background);
   margin: 0;
@@ -64,7 +64,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   width: 100%;
-  line-height: 2.5rem;
+  /* line-height: 2.5rem; */
 }
 
 .gameover-message p {
@@ -105,24 +105,14 @@ body {
 
 
 .applyNow{
-  /* position: absolute; */
   bottom: 50px;
   width: 80%;
   margin: auto;
-  line-height: 1.5rem;
 }
 
 .applyNow h2{
   margin-top: 50px;
-}
-
-.applyNow p{
-  font-size: .8rem;
-}
-
-li{
-  font-size: .8rem;
-  line-height: 2rem;
+  font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 600px) {

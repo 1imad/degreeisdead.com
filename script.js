@@ -8,6 +8,7 @@ const applyNow = document.querySelector("#apply-now");
 const csLogo = document.querySelector("#cs-logo");
 
 document.addEventListener("keydown", startGame, { once: true });
+document.addEventListener('touchend', startGame, { once: true });
 
 /* general variables */
 let lastTime;

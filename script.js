@@ -8,6 +8,7 @@ const applyNow = document.querySelector("#apply-now");
 const csLogo = document.querySelector("#cs-logo");
 
 document.addEventListener("keydown", startGame, { once: true });
+document.addEventListener('touchend', startGame, { once: true });
 
 /* general variables */
 let lastTime;
@@ -148,6 +149,8 @@ function setupDino() {
   setCustomProperty(dino, "--bottom", 0);
   document.removeEventListener("keydown", onJump); /* reset the dinosaur if the player dies while jumping */
   document.addEventListener("keydown", onJump);
+  document.removeEventListener("touchend", onJump); /* reset the dinosaur if the player dies while jumping */
+  document.addEventListener("touchend", onJump);
 }
 
 function updateDino(delta, speedScale) {

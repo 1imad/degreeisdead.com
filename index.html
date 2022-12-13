@@ -10,6 +10,8 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -29,18 +31,63 @@
       </div>
    </div>
    <div class="applyNow hide" id="apply-now">
-      <h2>Unable to connect to the industry.</h2>
+      <h2>Unable to connect to the <span class="red">industry</span>.</h2>
       <p>Google Chrome can't display jobs because your degree isn't connected to your skills.</p>
       <h3>Try:</h3>
       <ul>
          <li>Reconnecting with industry and acquiring in-demand skills.</li>
          <li>
             <strong>
-               <a href="https://apply.cs.code.in">Fill an application on cs.code.in</a>
+               <a href="https://apply.cs.code.in">Fill the application on cs.code.in</a>
             </strong>
          </li>
       </ul>
    </div>
+   <div class="modal fade show" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-modal="true"
+      role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <button type="button" class="btn-close float-right-close-btn" data-bs-dismiss="modal"
+               aria-label="Close"></button>
+            <div class="modal-body">
+               <form id="contact-form">
+                  <h1 class="font-2 fw-bold">Jumpstart Your <span class="text-blue d-block">Code Career!</span>
+                  </h1>
+                  <p class="fw-bold">Unlock your potential and become a <br> Software Engineer with the
+                     CS.code.in
+                     Bootcamp. </p>
+                  <div id="formalert-2"></div>
+                  <label class="mb-2" for="name">Name</label>
+                  <input class="form-control mb-3" required="" type="text" name="name-2" id="name-2" placeholder="Name">
+                  <div class="row input-row">
+                     <div class="col-lg-6">
+                        <label class="mb-2" for="email">Email</label>
+                        <input class="form-control mb-3" required="" type="email" name="email-2" id="email-2"
+                           placeholder="Email">
+                     </div>
+                     <div class="col-lg-6">
+                        <label class="mb-2" for="mobile">Mobile</label>
+                        <input class="form-control mb-3" required="" type="tel" name="mobile-2" id="mobile-2"
+                           placeholder="Mobile">
+                     </div>
+                  </div>
+                  <label class="mb-2" for="country">Country</label>
+                  <input class="form-control mb-3" type="text" required="" name="country-2" id="country-2"
+                     placeholder="Country">
+                  <label class="mb-2" for="mobile">Message</label>
+                  <textarea class="form-control mb-3" name="message-2" required="" id="message-2"
+                     placeholder="Message"></textarea>
+                  <p class="text-secondary">Application Last Date for December Batch : <br><span
+                        class="fw-bold text-dark">December 5, 2022</span></p>
+                  <button id="contact-submit-2" class="btn btn-blue btn-lg" type="submit">Submit</button>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
    <script src="/script.js"></script>
 </body>
 

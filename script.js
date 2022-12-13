@@ -6,6 +6,9 @@ const startMessage = document.querySelector("#start-message");
 const gameoverMessage = document.querySelector("#gameover-message");
 const applyNow = document.querySelector("#apply-now");
 const csLogo = document.querySelector("#cs-logo");
+const formModal = new bootstrap.Modal(document.getElementById('formModal'), {
+  keyboard: false
+})
 
 document.addEventListener("keydown", startGame, { once: true });
 document.addEventListener('touchend', startGame, { once: true });
@@ -51,6 +54,18 @@ function startGame() {
   window.requestAnimationFrame(update);
 }
 
+function startGame2() {
+  lastTime = null;
+  speedScale = 1;
+  score = 0;
+  setupGround();
+  setupDino();
+  setupCactus();
+  startMessage.classList.add("hide");
+  gameoverMessage.classList.add("hide");
+  window.requestAnimationFrame(update);
+}
+
 /* speeds up the game over time */
 function updateSpeedScale(delta) { 
   speedScale += delta * SPEED_SCALE;
@@ -79,10 +94,11 @@ function checkGameOver() {
 function handleGameOver() {
   setDinoLose();
   setTimeout(() => {
-    document.addEventListener("keydown", startGame, { once: true }); /* prevents accidental click */
+    document.addEventListener("keydown", startGame2, { once: true }); /* prevents accidental click */
     gameoverMessage.classList.remove("hide");
     applyNow.classList.remove("hide");
     csLogo.classList.remove("hide");
+    formModal.show()
   }, 100);
 }
 
